@@ -1,6 +1,5 @@
 vim-syncr
 =========
-DISLAIMER: I don't know shit about vim script so I will accept PRs if my code is bad.
 
 vim-syncr is a simple vim script for uploading/downloading files to a remote location or deleting files from a remote location using rsync over ssh.
 

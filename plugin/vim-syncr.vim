@@ -3,8 +3,8 @@
 " Usage: :VsUpload, VsDownload and :VsDelete
 "        Mapped to
 "        <leader>vsu (vim-syncr upload)
-"        <leader>vsdel (vim-syncr delete)
 "        <leader>vsd (vim-syncr download)
+"        <leader>vsdel (vim-syncr delete)
 "        See README for more
 " Github: https://github.com/s10g/vim-syncr
 " Author: Stig
