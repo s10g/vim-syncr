@@ -22,7 +22,7 @@ Install like you would any other Vundle compatible plugin.
 
 Usage:
 ------
-Create a filed called .sync in your project's root directory containing the following configuration, chmod it to 700 and chpwn it for security:
+Create a filed called .syncr in your project's root directory containing the following configuration, chmod it to 700 and chpwn it for security:
 ```
     $ cat /Desktop/projects/newproject/.syncr
     remote_host     www-dev.example.com
