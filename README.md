@@ -8,8 +8,10 @@ I needed to solve this workflow and its criterias:
 1. Local git repository with typical web files (html, php, images, etc)
 2. Remote web root
 3. Mirror my local environment to the remote web root minus files/directories marked for exclusion (yes "web files", no git folder)
-    a. Must be able to "clean up" remotely by deleting or renaming files that I delete or rename locally
-    b. Authorization and authentication must "Just work" with SSH keys; I want no hassle, no password prompts
+
+Criterias:
+- Must be able to "clean up" remotely by deleting or renaming files that I delete or rename locally
+- Authorization and authentication must "Just work" with SSH keys; I want no hassle, no password prompts
 
 I found [vim-hsftp](https://github.com/hesselbom/vim-hsftp) but I couldn't quite get it to work. It did however have excellent configuration loading code, so [vim-syncr](https://github.com/s10g/vim-syncr) is forked from [vim-hsftp](https://github.com/hesselbom/vim-hsftp). All credit goes to hesselbom/vim-hsftp; without it this project would never have been started.
 
