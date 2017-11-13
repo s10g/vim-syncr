@@ -16,15 +16,18 @@ I found [vim-hsftp](https://github.com/hesselbom/vim-hsftp) but I couldn't quite
 Usage:
 ------
 Create a filed called .sync in your project's root directory containing the following configuration, chmod it to 700 and chpwn it for security:
-```$ cat /Desktop/projects/newproject/.syncr
-   remote_host     www-dev.example.com
-   remote_user     bob
-   remote_path     /home/bob/html/site1/
-   project_path    /cygdrive/c/Users/bob/Desktop/projects/site1/
+```
+    $ cat /Desktop/projects/newproject/.syncr
+    remote_host     www-dev.example.com
+    remote_user     bob
+    remote_path     /home/bob/html/site1/
+    project_path    /cygdrive/c/Users/bob/Desktop/projects/site1/
 ```
 
 The end result is basically a concatenated string that becomes an rsync command which is called from inside vim, like so:
+```
 :!rsync -avzhe ssh /cygdrive/c/Users/bob/Desktop/projects/site1/ bob@www-dev.example.com:/home/bob/html/site1/ --exclude '.*'
+```
 
 
 ### Commands
