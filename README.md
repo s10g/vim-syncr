@@ -26,11 +26,6 @@ Create a filed called .sync in your project's root directory containing the foll
     project_path    ~/Desktop/projects/site1/
 ```
 
-The end result is basically a concatenated string that becomes an rsync command which is called from inside vim, like so:
-```
-:!rsync -avzhe ssh ~/Desktop/projects/site1/ bob@www-dev.example.com:/home/bob/html/site1/ --exclude '.*'
-```
-
 
 ### Commands
     :VsUpload
