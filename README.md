@@ -15,6 +15,11 @@ Criterias:
 
 I found [vim-hsftp](https://github.com/hesselbom/vim-hsftp) but I couldn't quite get it to work. It did however have excellent configuration loading code, so [vim-syncr](https://github.com/s10g/vim-syncr) is forked from [vim-hsftp](https://github.com/hesselbom/vim-hsftp). All credit goes to hesselbom/vim-hsftp; without it this project would never have been started.
 
+Install:
+------
+Install like you would any other Vundle compatible plugin.
+
+
 Usage:
 ------
 Create a filed called .sync in your project's root directory containing the following configuration, chmod it to 700 and chpwn it for security:
