@@ -1,9 +1,10 @@
 " Title: vim-syncr
-" Description: Upload/delete files and directories with rsync
-" Usage: :VsUpload and :VsDelete
+" Description: Upload/download/delete files and directories with rsync
+" Usage: :VsUpload, VsDownload and :VsDelete
 "        Mapped to
-"        <leader>vsu (vim-syncr upload) and
-"        <leader>vsd (vim-syncr delete)
+"        <leader>vsu (vim-syncr upload)
+"        <leader>vsdel (vim-syncr delete)
+"        <leader>vsd (vim-syncr download)
 "        See README for more
 " Github: https://github.com/s10g/vim-syncr
 " Author: Stig
