@@ -74,8 +74,21 @@ function! VS_DeleteFiles()
 endfunction
 
 
+function! VS_DownloadFiles()
+  let conf = VS_GetConf()
+
+  if has_key(conf, 'remote_host')
+        let cmd = "rsync -avzhe ssh " . conf['remote_user'] . "@" . conf['remote_host'] . ":" . conf['remote_path']  . " " . conf['project_path'] . " --exclude '.*'" 
+        execute '!' . cmd
+  else
+    echo 'Could not locate a .syncr configuration file. Aborting...'
+  endif
+endfunction
+
 command! VsUpload call VS_UploadFiles()
 command! VsDelete call VS_DeleteFiles()
+command! VsDownload call VS_DownloadFiles()
 
 nmap <leader>vsu :VsUpload<Esc>
+nmap <leader>vsdel :VsDelete<Esc>
 nmap <leader>vsd :VsDelete<Esc>
