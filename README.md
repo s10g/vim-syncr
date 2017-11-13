@@ -2,7 +2,7 @@ vim-syncr
 =========
 DISLAIMER: I don't know shit about vim script so I will accept PRs if my code is bad.
 
-vim-syncr is a simple vim script for uploading files to a remote location or deleting files from a remote location using rsync over ssh.
+vim-syncr is a simple vim script for uploading/downloading files to a remote location or deleting files from a remote location using rsync over ssh.
 
 I needed to solve this workflow and its criterias:
 1. Local git repository with typical web files (html, php, images, etc)
@@ -39,10 +39,16 @@ Syncs files and directories with remote
     :VsDelete
 Syncs any file or directory deletions with remote
 
+    :VsDownload
+Syncs files and directories with remote (grabs foreign new files)
+
 
 ### Mappings
     <leader>vsu
 Calls :VsUpload
 
-    <leader>vsd
+    <leader>vsdel
 Calls :VsDelete
+
+    <leader>vsd
+Calls :VsDownload
